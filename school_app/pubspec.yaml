@@ -1,0 +1,76 @@
+name: yosr_app
+description: Yosr Educational Platform.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2 # متوافق مع Flutter SDK
+
+  # --- Firebase (Stable) ---
+  firebase_core: ^2.27.0
+  firebase_auth: ^4.17.4
+  cloud_firestore: ^4.15.4
+  firebase_storage: ^11.6.9
+  
+  # --- UI & Utils ---
+  lottie: ^2.7.0
+  animate_do: ^3.3.4
+  google_fonts: ^6.2.1
+  cupertino_icons: ^1.0.6
+  flutter_markdown: ^0.6.18+3
+  fl_chart: ^0.66.0
+  cached_network_image: ^3.3.1
+  google_generative_ai: ^0.2.0
+  
+  url_launcher: ^6.2.4
+  shared_preferences: ^2.2.2
+  
+  # 👇👇 التعديلات الهامة هنا 👇👇
+  # تم تحديث هذه المكتبات لدعم Android Embedding V2
+  permission_handler: ^11.3.0
+  path_provider: ^2.1.2
+  
+  # image_picker و file_picker الحديثين يطلبون minSdkVersion 24 (وأنت فعلته بالفعل)
+  image_picker: ^1.1.0 
+  file_picker: ^8.0.0  # <--- هذا التحديث يحل مشكلة Registrar
+  open_file: ^3.3.2
+  
+  # PDF
+  pdf: ^3.10.7
+  printing: ^5.11.0
+  syncfusion_flutter_pdf: ^24.1.41
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.10
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/app_icon.png"
+  min_sdk_android: 24 # تم التحديث ليتوافق مع Gradle
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/splash_logo.png
+  android_12:
+    image: assets/splash_logo.png
+    color: "#FFFFFF"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/fonts/Cairo-Bold.ttf
