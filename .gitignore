@@ -1,0 +1,61 @@
+# Runtime secrets & env
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.pytest_cache/
+
+# Local / runtime data
+data/
+*.log
+*_logs.txt
+*.storage.json
+*.exe
+
+# IDE / tooling
+.kiro/
+.idea/
+.vscode/
+
+# Not part of deployable bot
+_1secmail_js/
+proxies/
+scripts/
+workers/
+tests/
+old stable/
+New folder/
+stable working/
+Kiro_app/
+dist/
+
+# Probe / one-off scripts (local only)
+_probe_*.py
+_e2e_*.py
+_test_*.py
+_diag_*.py
+_check_*.py
+_create_*.py
+_extract_*.py
+_inspect_*.py
+_poll_*.py
+_try_*.py
+_deploy_*.py
+deploy*.py
+deploy*.bat
+app.py
+runner.py
+wsgi.py
+temp.py
+maildev_client.py
+secmail_client.py
+packages.txt
+*.alt.md
+README.alt*
+README.gradio.md

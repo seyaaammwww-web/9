@@ -1,0 +1,10 @@
+python-telegram-bot[job-queue]>=20.0
+playwright==1.43.0
+httpx
+aiohttp
+huggingface_hub
+requests
+Pillow
+curl_cffi>=0.7.0
+faker>=24.0.0
+gradio

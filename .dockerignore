@@ -1,0 +1,59 @@
+# Keep Docker build context tiny — only ship what main.py needs.
+.git
+.gitignore
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.*
+!.env.example
+data
+*.log
+*.exe
+*.md
+!README.md
+
+# Local junk / alternate stacks
+.kiro
+.pytest_cache
+.idea
+.vscode
+dist
+tests
+scripts
+workers
+proxies
+_1secmail_js
+old stable
+New folder
+stable working
+Kiro_app
+
+# Probe / deploy helpers
+_probe_*
+_e2e_*
+_test_*
+_diag_*
+_check_*
+_create_*
+_extract_*
+_inspect_*
+_poll_*
+_try_*
+_deploy_*
+deploy*
+app.py
+runner.py
+wsgi.py
+temp.py
+maildev_client.py
+secmail_client.py
+packages.txt
+prompt_templates.py.bak
+*.html
+*.png
+*.jpg
+*.json
+!requirements.txt
